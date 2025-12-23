@@ -1,0 +1,45 @@
+# FastAPI
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+python-multipart==0.0.6
+
+# Database
+sqlalchemy==2.0.25
+psycopg2-binary==2.9.9
+alembic==1.13.1
+
+# Vector DB
+pgvector==0.2.4
+
+# Redis
+redis==5.0.1
+
+# Docling (PDF Processing)
+docling==1.0.0
+# docling-core>=1.1.0,<2.0.0
+
+# AI/ML
+openai==1.10.0
+langchain==0.1.6
+langchain-openai==0.0.5
+sentence-transformers==2.3.1
+
+# Utilities
+python-dotenv==1.0.0
+pydantic>=2.6.0,<3.0.0
+pydantic-settings>=2.3.0,<3.0.0
+
+# Image Processing
+Pillow==10.2.0
+
+# PDF fallback extractor (for Docker when Docling models can't download)
+pypdf==4.0.1
+
+# Testing
+pytest==7.4.4
+pytest-asyncio==0.23.3
+httpx==0.26.0
+
+# DeepSearch toolkit needed by Docling (optional; keep only if your project imports it)
+deepsearch-toolkit
+deepsearch-glm[toolkit]
